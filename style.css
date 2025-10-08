@@ -1,0 +1,158 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #111, #4a0000);
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #a00000;
+}
+
+header h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.left-panel {
+  background: #111;
+  border-right: 2px solid #222;
+}
+
+.right-panel {
+  background: #151515;
+}
+
+h2 {
+  color: #ff3333;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #ff3333;
+  box-shadow: 0 0 6px #ff3333;
+}
+
+#suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1c1c1c;
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  position: absolute;
+  width: 90%;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background: #ff3333;
+  color: #fff;
+}
+
+#ticket {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#ticket th, #ticket td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+#ticket th {
+  background: #a00000;
+  color: #fff;
+}
+
+.delete {
+  background: #d10000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.delete:hover {
+  background: #ff3030;
+}
+
+.total-section {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.remise-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#apply-remise {
+  background: #a00000;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#apply-remise:hover {
+  background: #d10000;
+}
+
+footer {
+  text-align: center;
+  background: #0a0a0a;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #777;
+  border-top: 1px solid #333;
+}
